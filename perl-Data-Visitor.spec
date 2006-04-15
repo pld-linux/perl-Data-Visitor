@@ -6,7 +6,7 @@
 %define	pdir	Data
 %define	pnam	Visitor
 Summary:	Data::Visitor - Visitor style traversal of Perl data structures
-#Summary(pl):	
+Summary(pl):	Data::Visitor - przechodzenie struktur danych Perla w stylu Visitor
 Name:		perl-Data-Visitor
 Version:	0.04
 Release:	1
@@ -28,11 +28,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module is a simple visitor implementation for Perl values.
 
-It has a main dispatcher method, visit, which takes a single perl value and
-then calls the methods appropriate for that value.
+It has a main dispatcher method, visit, which takes a single Perl
+value and then calls the methods appropriate for that value.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ to prosta implementacja visitor dla warto¶ci perlowych.
+
+Ma g³ówn± metodê przekierowuj±c± - visit, która przyjmuje pojedyncz±
+warto¶æ perlow±, a nastêpnie wywo³uje metody odpowiednie dla tej
+warto¶ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
