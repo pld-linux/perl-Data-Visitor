@@ -6,7 +6,7 @@
 %define	pdir	Data
 %define	pnam	Visitor
 Summary:	Data::Visitor - Visitor style traversal of Perl data structures
-Summary(pl.UTF-8):   Data::Visitor - przechodzenie struktur danych Perla w stylu Visitor
+Summary(pl.UTF-8):	Data::Visitor - przechodzenie struktur danych Perla w stylu Visitor
 Name:		perl-Data-Visitor
 Version:	0.04
 Release:	1
