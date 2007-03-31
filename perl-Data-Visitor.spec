@@ -13,8 +13,10 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/N/NU/NUFFIN/Data-Visitor-0.04.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/N/NU/NUFFIN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	44e1ff9daccb68954857c144761e320a
+URL:		http://search.cpan.org/dist/Data-Visitor/
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
