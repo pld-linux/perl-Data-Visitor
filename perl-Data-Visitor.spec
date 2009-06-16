@@ -8,22 +8,22 @@
 Summary:	Data::Visitor - Visitor style traversal of Perl data structures
 Summary(pl.UTF-8):	Data::Visitor - przechodzenie struktur danych Perla w stylu Visitor
 Name:		perl-Data-Visitor
-Version:	0.22
+Version:	0.25
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/N/NU/NUFFIN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f3bca28efc96aef200dd6bba74510c12
+Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	d00f4c144549a08d0a353d32e62f7e7c
 URL:		http://search.cpan.org/dist/Data-Visitor/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Class-Accessor
+BuildRequires:	perl(Any::Moose) >= 0.09
+BuildRequires:	perl(Task::Weaken)
+BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl-Test-MockObject >= 1.04
-BuildRequires:	perl-Test-use-ok
 BuildRequires:	perl-Tie-ToObject >= 0.01
-BuildRequires:	perl-Mouse >= 0.06
 BuildRequires:	perl-namespace-clean >= 0.08
 %endif
 BuildArch:	noarch
